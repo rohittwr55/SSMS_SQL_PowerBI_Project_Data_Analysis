@@ -39,21 +39,31 @@ Data Sources:
 We have two system CRM and ERP
 
 **CRM:**
+
 customers.csv
+
 product.csv
+
 sales.csv
 
 **ERP:**
+
 CUST_AZ12.csv
+
 LOC_A101.csv
+
 PX_CAT_G1V2.csv
 
-Characteristics:
+**Characteristics:**
+
 No data cleaning
+
 Load timestamp added
+
 Preserves original structure
 
-Purpose:
+**Purpose:**
+
 Maintain data lineage and raw history.
 
 **🥈 Silver Layer(processed_data_layer) – Cleaned & Transformed Data**
