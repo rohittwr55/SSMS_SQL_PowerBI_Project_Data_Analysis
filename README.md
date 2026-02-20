@@ -5,7 +5,7 @@
 
 This project simulates a how to create a data warehouse and how to implements a multi-layered data warehouse architecture using SQL Server.
 
-The goal is to design and build a scalable data pipeline using the Bronze → Silver → Gold layered approach to transform raw data into analytics-ready data models.
+The goal is to design and build a scalable data pipeline using the Bronze(raw_data) → Silver(processed_data) → Gold(analytics) layered approach to transform raw data into analytics-ready data models.
 
 **This project demonstrates:**
 
@@ -33,7 +33,8 @@ Silver Layer (Cleaned & Transformed Data)
    ↓
 Gold Layer (Star Schema - Fact & Dimensions)
 
-**🥉 Bronze layer - contains raw ingested data from flat CSV files without transformation.**
+**🥉 Bronze layer(raw_data_layer) - contains raw ingested data from flat CSV files without transformation.**
+
 Data Sources:
 We have two system CRM and ERP
 
@@ -55,7 +56,7 @@ Preserves original structure
 Purpose:
 Maintain data lineage and raw history.
 
-**🥈 Silver Layer – Cleaned & Transformed Data**
+**🥈 Silver Layer(processed_data_layer) – Cleaned & Transformed Data**
 
 The Silver layer applies business logic and data quality rules.
 
@@ -76,7 +77,7 @@ Deriving delivery delay metrics
 Purpose:
 Create structured, reliable, analytics-ready tables.
 
-**🥇 Gold Layer – Star Schema Model**
+**🥇 Gold Layer(analytics_layer) – Star Schema Model**
 
 The Gold layer implements dimensional modeling for reporting.
 
